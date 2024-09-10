@@ -7,7 +7,7 @@
   var isPassword = true;
 
   function transform() {
-    var passwordInputs = document.querySelectorAll("[data-ms-member='password'], [data-ms-member='new-password'], [data-ms-member='current-password']");
+    var passwordInputs = document.querySelectorAll("[data-ms-member='password'], [data-ms-member='new-password'], [data-ms-member='current-password'], [ms-code-password='confirm']");
 
     passwordInputs.forEach(function(myInput) {
       var inputType = myInput.getAttribute("type");
