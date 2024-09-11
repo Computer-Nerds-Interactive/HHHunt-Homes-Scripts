@@ -1,6 +1,17 @@
-// 💙 MEMBERSCRIPT #106 v0.2 💙 SAVING & UNSAVING CMS ITEMS
-
 document.addEventListener("DOMContentLoaded", function() {
+  // Adding the styles dynamically
+  const style = document.createElement("style");
+  style.innerHTML = `
+    [ms-code-save], [ms-code-unsave] {
+      display: none;
+    }
+    [ms-code-save-item] {
+      display: none;
+    }
+  `;
+  document.head.appendChild(style);
+
+  // JavaScript logic
   const memberstack = window.$memberstackDom;
   let isLoggedIn = false;
   let savedItems = [];
