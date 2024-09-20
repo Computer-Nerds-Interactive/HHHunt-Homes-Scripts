@@ -1,3 +1,5 @@
+// 1 second delay test
+
 document.addEventListener("DOMContentLoaded", function() {
   // Add a 1-second delay
   setTimeout(function() {
