@@ -1,15 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Adding the styles dynamically
-  const style = document.createElement("style");
-  style.innerHTML = `
-    [ms-code-save], [ms-code-unsave] {
-      display: none;
-    }
-    [ms-code-save-item] {
-      display: none;
-    }
-  `;
-  document.head.appendChild(style);
 
   // JavaScript logic
   const memberstack = window.$memberstackDom;
@@ -59,9 +48,9 @@ document.addEventListener("DOMContentLoaded", function() {
         
         if (!isLoggedIn || filter === 'all') {
           item.style.display = 'block';
-        } else if (filter === 'saved' & savedItems.includes(itemId)) {
+        } else if (filter === 'saved' && savedItems.includes(itemId)) {
           item.style.display = 'block';
-        } else if (filter === 'unsaved' & !savedItems.includes(itemId)) {
+        } else if (filter === 'unsaved' && !savedItems.includes(itemId)) {
           item.style.display = 'block';
         } else {
           item.style.display = 'none';
