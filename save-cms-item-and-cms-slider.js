@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Create a script element to load the external CDN
     const cdnScript = document.createElement("script");
     cdnScript.src = "https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsslider@1/cmsslider.js"; // Replace with the actual CDN URL
-    cdnScript.async = true;
   
     // Function to execute after the CDN script is loaded
     cdnScript.onload = function() {
