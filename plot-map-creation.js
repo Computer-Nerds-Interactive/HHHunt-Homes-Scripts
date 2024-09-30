@@ -110,8 +110,8 @@
         plotDot.classList.add('plot_dot-fake'); // Updated class name
 
         // Center the plot_dot-fake around the click position
-        plotDot.style.left = `${event.pageX - 10}px`; // Centered, adjust for dot size
-        plotDot.style.top = `${event.pageY - 10}px`; // Centered, adjust for dot size
+        // plotDot.style.left = `${event.pageX - 10=}px`; // Centered, adjust for dot size
+       //  plotDot.style.top = `${event.pageY - 10}px`; // Centered, adjust for dot size
 
         // Append the plot_dot-fake to the body
         document.body.appendChild(plotDot);
